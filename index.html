@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Movie Tickets</h1>
+        <form id="tickets" class="form-group">
+          <label for="movie">Select a movie</label>
+          <select id="movie">
+            <option>Swiss Armyman</option>
+            <option>Star Wars</option>
+            <option>The Revenant</option>
+            <option>The Lobster</option>
+          </select>
+
+          <label for="age">Select your age</label>
+          <select id="age">
+            <option value="Youth">Youth</option>
+            <option value="Teenager">Teenager</option>
+            <option value="Adult">Adult</option>
+            <option value="Senior">Senior</option>
+          </select>
+
+          <label for="time">Select a time</label>
+          <select id="time">
+            <option value="12pm">12pm</option>
+            <option>3pm</option>
+            <option>6pm</option>
+            <option>9pm</option>
+          </select>
+          <button id="calculate" class="btn" type="submit" name="button">Calculate</button>
+
+        </form>
+
+        <div id="result">
+          <p>Your movie <span class="movie"></span> starts at <span class="time"></span>. The price is: <span class="price"></span></p>
+        </div>
+
+    </div>
+
+
+
+  </body>
+</html>
